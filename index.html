@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+        <link
+            rel="stylesheet"
+            href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./src/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="https://helpper.com.br/" target="_blank"
+                    >Formulario de Cadastro | Helpper</a
+                >
+            </h1>
+        </header>
+        <div class="container">
+            <button
+                type="button"
+                class="btn btn-secondary col-sm-2"
+                onclick="novo()"
+            >
+                Novo
+            </button>
+
+            <form id="form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        placeholder="Insira seu nome"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Insira seu email"
+                    />
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label for="cpf">CPF</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="cpf"
+                            placeholder="Insira seu CPF com 11 dígitos"
+                            maxlength="14"
+                        />
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="tel">Telefone</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="tel"
+                            placeholder="Insira seu telefone"
+                        />
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                        <label for="cep">CEP</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            maxlength="9"
+                            id="cep"
+                            placeholder="00000-000"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="logragouro">Logradouro</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="logradouro"
+                        placeholder="Rua"
+                    />
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label for="bairro">Bairro</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="bairro"
+                            placeholder="Bairro"
+                        />
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                        <label for="localidade">Localidade</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="localidade"
+                            placeholder="Cidade"
+                        />
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                        <label for="uf">UF</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="uf"
+                            placeholder="Estado"
+                        />
+                    </div>
+                </div>
+            </form>
+
+            <div class="buttons">
+                <button
+                    type="button"
+                    class="btn btn-primary col-sm-2"
+                    onclick="gravar()"
+                >
+                    Adicionar
+                </button>
+                <button
+                    type="button"
+                    class="btn btn-danger col-sm-2"
+                    onclick="apagar()"
+                >
+                    Remover
+                </button>
+            </div>
+            <input type="hidden" id="index" />
+            <table class="table table-hover">
+                <thead>
+                    <th width="5%">Nº</th>
+                    <th width="30%">Nome</th>
+                    <th width="25%">Email</th>
+                    <th width="15%">CPF</th>
+                    <th width="15%">Telefone</th>
+                    <th width="10%">CEP</th>
+                </thead>
+                <tbody id="tb-body"></tbody>
+            </table>
+        </div>
+        <footer>
+            <p>Desenvolvido por Marcos Guilherme Silva</p>
+
+            <div>
+                <span
+                    ><a
+                        href="https://www.linkedin.com/in/marcos-guilherme-barbosa-da-silva"
+                        >LinkedIn</a
+                    >
+                    |
+                    <a href="https://github.com/mguilherm">GitHub</a>
+                    |
+                    <a href="mailto:marcosguilherme.silva@outlook.com"
+                        >Email</a
+                    ></span
+                >
+            </div>
+        </footer>
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
