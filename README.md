@@ -7,6 +7,7 @@
 <p> Este app é um formulário de cadastro de clientes, que contém: <br> Nome <br> E-mail <br> CPF ou CNPJ <br> Telefone <br> CEP <br> </p>
 <p> Foi desenvolvido como teste prático para o programa de Estágio da <a href="https://helpper.com.br/">Helpper</a> que tinha como RN [regra de negócio]:</p> 
 <p> Listagem dos dados <br> Exclusão de algum item da lista </p>
+<img src="./img/readme">
 
 ### Quais os diferenciais que apresentei? 💻
 <p> #1 | Além das RN acima, pude desenvolver a funcionalidade de alteração dos dados já cadastrados;<br> 
